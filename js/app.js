@@ -631,8 +631,8 @@ window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (!header) return;
     
-    // Solo aplicar en móviles y si hemos bajado más de 500px
-    if (window.innerWidth <= 768 && window.scrollY > 500) {
+    // Solo aplicar en móviles y si hemos bajado más de 300px
+    if (window.innerWidth <= 768 && window.scrollY > 300) {
         header.classList.add('hide-links');
     } else {
         header.classList.remove('hide-links');
